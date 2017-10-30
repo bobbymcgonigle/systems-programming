@@ -1,4 +1,4 @@
-# systems-programming
+# Systems Programming (C)
 Systems Programming Assignments
 
 # 2015 Past exam Question
@@ -35,5 +35,14 @@ the input is:
         ( 7 + 8 ) * 3 - 22
 The output should be:
         23
-    
+        
+# Lab 4 - Bit Vector Sets
+Write an abstract data type (ADT) to represent sets of items, where the class of items that the set is chosen from is small and can be
+mapped onto numbers zero to number of items. You should use bit vectors to represent the class. A bit vector is an array of some (usually unsigned) integer type. Each bit in each integer is used to represent the presence or absence of one item from the class of items that can belong to the set.
+
+# Lab 5 - Bloom Filter
+A Bloom filter makes extensive us of hashing functions and a bit vector set. A hashing function takes a value of some type and maps it to an integer in the range 0 to k. The simplest Bloom filters apply a single hash function to input data and insert the hashed value of the input into the bit vector set. Thereafter, if you check for membership of the item in the set it will return true. However, other items may hash to the same location with the result that the Bloom filter will also report these as members of the set.
+Write an abstract data type (ADT) to represent an approximate set of
+string. You should implement a Bloom filter to represent the class.
+
  
